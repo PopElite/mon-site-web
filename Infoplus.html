@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio HOUNKPE Elite</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0 20px; /* Adding margin to the left and right */
+            padding: 0;
+            background-color: #E7DFF7;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #1c1f49;
+            color: #FF517B;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: calc(100% - 40px); /* Adjusted for body margin */
+            top: 0;
+            left: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            background-color: #392884;
+            color: #FF517B;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 2px solid #392884;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #FF517B;
+            color: #392884;
+        }
+
+        h1, h2 {
+            margin: 0;
+        }
+
+        main {
+            padding: 100px 20px 20px; /* Adjust padding to accommodate fixed header */
+            position: relative;
+            z-index: 1;
+        }
+
+        section {
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        #about {
+            position: relative;
+        }
+
+        #about .popup {
+            background-color: #E7DFF7;
+            border: 2px solid #392884;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            max-width: 80%;
+            margin: 20px auto;
+        }
+
+        #education ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #education li {
+            margin-bottom: 10px;
+        }
+
+        #skills .skills-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer {
+            background-color: rgb(28, 31, 76);
+            color: #FF517B;
+            padding: 20px;
+            text-align: center;
+        }
+
+        button a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            background-color: #392884;
+            color: #FF517B;
+            padding: 10px 20px;
+            border: 2px solid #392884;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #FF517B;
+            color: #392884;
+        }
+
+        p a {
+            color: #392884;
+        }
+
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            animation: float 20s infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-1000px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .bubble:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            bottom: -80px;
+            left: 10%;
+            animation-duration: 18s;
+            animation-delay: 0s;
+        }
+
+        .bubble:nth-child(2) {
+            width: 100px;
+            height: 100px;
+            bottom: -100px;
+            left: 25%;
+            animation-duration: 22s;
+            animation-delay: 2s;
+        }
+
+        .bubble:nth-child(3) {
+            width: 120px;
+            height: 120px;
+            bottom: -120px;
+            left: 40%;
+            animation-duration: 20s;
+            animation-delay: 4s;
+        }
+
+        .bubble:nth-child(4) {
+            width: 60px;
+            height: 60px;
+            bottom: -60px;
+            left: 55%;
+            animation-duration: 24s;
+            animation-delay: 6s;
+        }
+
+        .bubble:nth-child(5) {
+            width: 90px;
+            height: 90px;
+            bottom: -90px;
+            left: 70%;
+            animation-duration: 26s;
+            animation-delay: 8s;
+        }
+
+        .bubble:nth-child(6) {
+            width: 50px;
+            height: 50px;
+            bottom: -50px;
+            left: 85%;
+            animation-duration: 28s;
+            animation-delay: 10s;
+        }
+    </style>
+</head>
+<body>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+
+    <header>
+        <h1>HOUNKPE Elite</h1>
+        <h2>Élève en IMI - Webdesigner & Développeur</h2>
+        <nav>
+            <ul>
+                <li><a href="portfolio (1).html" target="_blank">Accueil</a></li>
+                <li><a href="infoplus.html" target="_blank">Informations</a></li>
+                <li><a href="mon cv.pdf" target="_blank">CV</a></li>
+                <li><a href="ma video.html" target="_blank">Créations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <div class="popup">
+                <h1>BIENVENUE SUR MON PORTFOLIO</h1>
+        <h1>Mon histoire</h1>
+        <p>Mon histoire commence il y a longtemps, lorsque j'étais encore un enfant curieux et impatient de découvrir le monde. <br> J'avais toujours été intéressé par les machines et les systèmes complexes, et c'est pourquoi le domaine de l'automatisme m'a immédiatement attiré. J'ai commencé à collectionner des robots et des appareils électriques, et j'ai passé des heures à les démonter mais les remonter pour comprendre comment ils fonctionnaient était difficile voir impossible pour moi en ces temps.<br>Peu de temps après, j'ai développé un intérêt pour la fiction du voyage dans le temps. J'avais lu des livres que j'avais pu trouver sur le sujet, et j'étais fasciné par l'idée de voyager à travers les siècles et les époques. J'ai même essayé d'imaginer comment un tel voyage pourrait être réalisé, en concevant de sorte de machine à remonter le temps (de simple imagination ). <br> C'est à ce moment-là que j'ai commencé à développer un intérêt pour l'astronautique. J'ai lu des livres que j'ai pu trouver sur le sujet, et j'ai suivi avec intérêt les missions spatiales qui se déroulaient à l'époque. J'ai même essayé de construire une fusée à l'aide de matériaux de récupération, mais mes essais n'ont pas été couronnés de succès. <br> Peu de temps après, j'ai commencé à s'intéresser au design graphique. J'avais toujours été attiré par les images et les dessins, et j'ai découvert que le design pouvait être utilisé pour communiquer des idées et des messages de manière efficace et esthétique. J'ai commencé à prendre des cours de design et à m'entraîner sur des logiciels de création de contenu, et j'ai rapidement développé mes propres talents. J'ai commencé à prendre des cours de design et à m'entraîner sur des logiciels de création de contenu, et j'ai rapidement développé mes propres talents dans ce domaine. </br> En parallèle, j'ai commencé à s'intéresser au développement web. J'avais toujours été fasciné par les possibilités offertes par Internet, et j'ai découvert que le développement web était le moyen par lequel je pourrais créer des sites Web et des applications qui pouvaient être utilisés par des millions de personnes autour du monde. J'ai commencé à prendre des cours en ligne et à m'entraîner sur des plateformes de développement, et j'ai rapidement développé mes compétences dans ce domaine. </br> Plus tard, j'ai développé un intérêt pour les ordinateurs et leurs apports à l'humanité. J'avais toujours été fasciné par les possibilités offertes par les ordinateurs, et j'ai découvert que ces appareils hautement sophistiqués pouvaient être utilisés pour résoudre des problèmes complexes et améliorer la qualité de vie des gens. J'ai commencé à suivre les avancées technologiques et à m'entraîner sur des plateformes de développement informatique, et j'ai rapidement développé mes compétences dans ce domaine. </br> Aujourd'hui, je suis reconnu toujours en formation dans ces domaines, et je test puis améliore mes compétences au jour le jour. Je continue de travailler dur pour améliorer mes connaissances et mes compétences, car je sais que le monde de la technologie est en constante évolution, et que ceux qui ne se déplacent pas restent en arrière.</p>
+          </div>
+      </section>
+              <section id="MON CV">
+                 <h2> Mon CV </h2>
+                 <a href="mon cv.pdf" download="mon cv.pdf"> Telecharger le fichier</a> 
+              </section>
+              <section id="ma video">
+                <a href="ma video.html"> 
+                    <h2>Ma video</h2>
+                </a>
+              </section>
+            </main>
+            <footer>
+                <p>&copy; 2024 HOUNKPE Elite - Tous droits réservés</p>
+            </footer>
+        </body>
+</html>

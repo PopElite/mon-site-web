@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio HOUNKPE Elite</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0 20px; /* Adding margin to the left and right */
+            padding: 0;
+            background-color: #E7DFF7;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            background-color: #392884;
+            color: #FF517B;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 2px solid #392884;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #FF517B;
+            color: #392884;
+        }
+
+        header {
+            background-color: #1c1f49;
+            color: #FF517B;
+            padding: 20px;
+            position: fixed;
+            width: calc(100% - 40px); /* Adjusted for body margin */
+            top: 0;
+            left: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        h1, h2 {
+            margin: 0;
+        }
+
+        main {
+            padding: 100px 20px 20px; /* Adjust padding to accommodate fixed header */
+            position: relative;
+            z-index: 1;
+        }
+
+        section {
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        #about {
+            position: relative;
+        }
+
+        #about .popup {
+            background-color: #  ;
+            border: 2px solid #392884;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            max-width: 80%;
+            margin: 20px auto;
+        }
+
+        #education table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #education th, #education td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        #education th {
+            background-color: #392884;
+            color: #FF517B;
+        }
+
+        #skills .skills-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer {
+            background-color: #392884;
+            color: #FF517B;
+            padding: 20px;
+            text-align: center;
+        }
+
+        button a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            background-color: #392884;
+            color: #FF517B;
+            padding: 10px 20px;
+            border: 2px solid #392884;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #FF517B;
+            color: #392884;
+        }
+
+        p a {
+            color: #392884;
+        }
+
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            animation: float 20s infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-1000px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .bubble:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            bottom: -80px;
+            left: 10%;
+            animation-duration: 18s;
+            animation-delay: 0s;
+        }
+
+        .bubble:nth-child(2) {
+            width: 100px;
+            height: 100px;
+            bottom: -100px;
+            left: 25%;
+            animation-duration: 22s;
+            animation-delay: 2s;
+        }
+
+        .bubble:nth-child(3) {
+            width: 120px;
+            height: 120px;
+            bottom: -120px;
+            left: 40%;
+            animation-duration: 20s;
+            animation-delay: 4s;
+        }
+
+        .bubble:nth-child(4) {
+            width: 60px;
+            height: 60px;
+            bottom: -60px;
+            left: 55%;
+            animation-duration: 24s;
+            animation-delay: 6s;
+        }
+
+        .bubble:nth-child(5) {
+            width: 90px;
+            height: 90px;
+            bottom: -90px;
+            left: 70%;
+            animation-duration: 26s;
+            animation-delay: 8s;
+        }
+
+        .bubble:nth-child(6) {
+            width: 50px;
+            height: 50px;
+            bottom: -50px;
+            left: 85%;
+            animation-duration: 28s;
+            animation-delay: 10s;
+        }
+    </style>
+</head>
+<body>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    
+    <header>
+        <h1>HOUNKPE Elite</h1>
+        <h2>Élève en IMI - Webdesigner & Développeur</h2>
+        <nav>
+            <ul>
+                <li><a href="portfolio (1).html" target="_blank">Accueil</a></li>
+                <li><a href="infoplus.html" target="_blank">Informations</a></li>
+                <li><a href="mon cv.pdf" target="_blank">CV</a></li>
+                <li><a href="ma video.html" target="_blank">Créations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+    <main>
+        <section id="about">
+            <div class="popup">
+                <h1>BIENVENUE SUR MON PORTFOLIO</h1>
+                <img src="image.jpg" width="200" height="200" border="10" style="border-radius: 50%;">
+                <h2>À propos de moi</h2>
+                <p>Je suis HOUNKPE Elite, un étudiant passionné par l'informatique et le webdesign. Je suis actuellement en formation au Lycée Technique et Professionnel en section Installation et Maintenance en Informatique (IMI) où je développe mes compétences en création de sites web, graphisme, montage vidéo et maintenance informatique.</p>
+                <button type="button"><a href="infoplus.html" target="_blank">En Savoir plus</a></button>
+            </div>
+        </section>
+        <section id="education">
+            <h2>Parcours académique</h2>
+            <table>
+                <tr>
+                    <th>Année</th>
+                    <th>Classe</th>
+                </tr>
+                <tr>
+                    <td>2016-2017</td>
+                    <td>Classe de 6ème</td>
+                </tr>
+                <tr>
+                    <td>2017-2018</td>
+                    <td>Classe de 5ème</td>
+                </tr>
+                <tr>
+                    <td>2018-2019</td>
+                    <td>Classe de 4ème</td>
+                </tr>
+                <tr>
+                    <td>2019-2020</td>
+                    <td>Classe de 3ème</td>
+                </tr>
+                <tr>
+                    <td>Depuis 2020</td>
+                    <td>Lycée</td>
+                </tr>
+            </table>
+        </section>
+        <section id="skills">
+            <h2>Compétences</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="graphisme.png" width="200" height="200" alt="graphisme">
+                    <h3>Graphisme</h3>
+                </div>
+                <div class="skill">
+                    <img src="montage-video.png" width="200" height="200" alt="Montage vidéo">
+                    <h3>Montage vidéo</h3>
+                </div>
+                <div class="skill">
+                    <img src="wordpress.png" width="200" height="200" alt="Création de site web avec Wordpress">
+                    <h3>Création de site web avec Wordpress</h3>
+                </div>
+                <div class="skill">
+                    <img src="logiciel-bureautique.png" width="200" height="200" alt="Maîtrise de logiciel bureautique">
+                    <h3>Maîtrise de logiciel bureautique</h3>
+                </div>
+                <div class="skill">
+                    <img src="maintenance-informatique.png" width="200" height="200" alt="Maintenance informatique">
+                    <h3>Maintenance informatique</h3>
+                </div>
+            </div>
+        </section>
+        <section id="interests">
+            <h2>Centres d'intérêt</h2>
+            <p>En dehors de mes études et de mes compétences techniques, je m'intéresse également au football, au basketball, à la lecture, à la musique et au cinéma.</p>
+        </section>
+        <section id="projects">
+            <h2>Projets</h2>
+            <p>Création de Site Web à code HTML</p>
+            <p>Création de Site Web pour mon établissement</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Pour en savoir plus sur moi, rendez-vous à la section "À propos de moi".</p>
+            <p>Vous souhaitez me contacter ou collaborer avec moi ? N'hésitez pas à me contacter via Whatsapp au +22991346385.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 HOUNKPE Elite - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
